@@ -1,0 +1,112 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="19.999999999999773" scrolly="9" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="vkxtr/83xec?9W(3VrdR" x="-10" y="-10">
+      <field name="LOAD_COMP_ASSETS">FALSE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">TRUE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+  </tab>
+  <tab name="New Tab" type="CommonTab" active="true" scrollx="102.12754863068403" scrolly="73.20785762740707" scale="0.6241985657254315">
+    <block xmlns="https://developers.google.com/blockly/xml" type="show" id="*1=@Rb0G0(U2[Z)IV1p=" x="170" y="30">
+      <value name="VALUE">
+        <shadow type="objectList" id=",HYaie[P;G,1]^X+5X=%">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+        <block type="groupList" id="D%##|I*?1V1qszS3/5dD">
+          <field name="FIELDNAME">farmer_group</field>
+        </block>
+      </value>
+      <next>
+        <block type="hide" id="~pW5KU;RTrg/.eQ-CJLv">
+          <value name="VALUE">
+            <shadow type="objectList" id="xwEJu=YgN-q--=~jG.+6">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="groupList" id="hkVP]VvrM76A^Z,To0/O">
+              <field name="FIELDNAME">indicator_group</field>
+            </block>
+          </value>
+          <next>
+            <block type="playAnimationAdv" id="h|!j3M/@}Urx7PXAi|F=">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="true" enablewhenfinished="false"></mutation>
+              <field name="REVERSED">FALSE</field>
+              <field name="LOOP">LoopRepeat</field>
+              <value name="VALUE">
+                <shadow type="animationList" id="viZ`wEP.v+T/e[8ktRmR">
+                  <field name="FIELDNAME">farmer_armature</field>
+                </shadow>
+              </value>
+              <value name="FROM">
+                <shadow type="math_number" id="v^15B+k0KmL4`$!XQtXP">
+                  <field name="NUM">1</field>
+                </shadow>
+              </value>
+              <value name="TO">
+                <shadow type="math_number" id="HTo4K5Wu.K@4YdH.Aufv">
+                  <field name="NUM">100</field>
+                </shadow>
+              </value>
+              <value name="SPEED">
+                <shadow type="math_number" id="FmUE@688/Ha$)VpAUruo">
+                  <field name="NUM">1</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="P)s4k=hFUw2Sh$9k-:4y" inline="false" x="110" y="170">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="dhHrA{Zbu!r$^Bu`a)x?">
+          <field name="FIELDNAME">farmer_mesh</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="stopAnimation" id="3R$Tq)w(MnpVsNFl_8TW">
+          <value name="VALUE">
+            <shadow type="animationList" id="|-utLah6jCLr~SX-M?/B">
+              <field name="FIELDNAME">farmer_armature</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="playAnimationAdv" id="d(U.{%G*lu)e(ij$91`M">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="true" enablewhenfinished="false"></mutation>
+          <field name="REVERSED">FALSE</field>
+          <field name="LOOP">LoopOnce</field>
+          <value name="VALUE">
+            <shadow type="animationList" id="[nB)_g)O6u9zQ%B?@o?d">
+              <field name="FIELDNAME">farmer_armature</field>
+            </shadow>
+          </value>
+          <value name="FROM">
+            <shadow type="math_number" id="8@O+^.4?%F:Nlz@?LZ3S">
+              <field name="NUM">101</field>
+            </shadow>
+          </value>
+          <value name="TO">
+            <shadow type="math_number" id="aR@9E?j74AL]T[hhVap}">
+              <field name="NUM">140</field>
+            </shadow>
+          </value>
+          <value name="SPEED">
+            <shadow type="math_number" id="~qhu_4+BWXenD6+7VOF/">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <editorsettings viewport-x="926.0000732421875" viewport-y="84.20001602172852" viewport-w="595.2" viewport-h="352" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
